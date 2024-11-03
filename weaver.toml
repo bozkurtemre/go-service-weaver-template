@@ -1,0 +1,11 @@
+[serviceweaver]
+binary = "./bin/app"
+
+[single]
+listeners.frontend = {address = "localhost:8080"}
+
+[multi]
+listeners.frontend = {address = "localhost:8080"}
+
+["github.com/bozkurtemre/go-service-weaver-template/internal/example/Service"]
+Source = "postgres://postgres:postgres@localhost:5432/postgres?sslmode=disable"
