@@ -12,14 +12,13 @@ This is a template project for creating a Service Weaver application, using sqlc
 
 - [PostgreSQL](https://www.postgresql.org/)
 
-### Architecture
+## Architecture
 
 This template was inspired by Clean Architecture and offers templates that follow its core concepts. The templates provided facilitate the creation of modular, maintainable, and testable codebases by promoting a clear separation of concerns and the independence of business logic from external dependencies. By using this templates, developers can jumpstart their projects with a well-organized structure that aligns with Clean Architecture, enabling them to focus on implementing the domain-specific logic while adhering to best practices. This template empowers developers to build robust and scalable applications, leveraging the benefits of Clean Architecture for easier understanding, maintenance, and evolution over time.
 
 ### Repository Structure
 
 ```bash
-.
 ├── bin
 │   └── app
 ├── cmd
@@ -81,12 +80,23 @@ make run
 
 ## Commands
 
-### Makefile
+Build the project:
 
-run: Run the application.
-run-multi: Run the application services on multiple processes.
-run-docker: Run the application services using Docker.
-build: Build the application.
+```sh
+make build
+```
+
+Run the project:
+
+```sh
+make run
+```
+
+Run the docker services:
+
+```sh
+make docker-run
+```
 
 ## Configuration
 
