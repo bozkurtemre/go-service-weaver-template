@@ -10,6 +10,3 @@ run-multi: ## Run the application multi process
 
 docker-run: ## Run the application in docker
 	@docker compose -f ./deployments/compose.yml up -d --build
-
-docker-watch: ## Run the application in docker with watch mode
-	@docker compose -f ./deployments/compose.yml up --watch
